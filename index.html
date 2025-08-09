@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!-- Tela de Login -->
+    <div class="login-container" id="loginScreen">
+        <div class="login-box">
+            <h1>Loja Virtual</h1>
+            <p>Faça login para continuar</p>
+            
+            <div class="divider"></div>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="seu@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Sua senha">
+                </div>
+                
+                <button type="submit" class="login-btn">Entrar</button>
+            </form>
+            
+            <div class="demo-info">
+                Login Demo:<br>
+                Usuário: admin@example.com<br>
+                Senha: admin123
+            </div>
+        </div>
+    </div>
+    
+    <!-- Tela de Catálogo -->
+    <div class="container catalog-container" id="catalogScreen">
+        <h1>Buscar produtos...</h1>
+        <input type="text" class="search-bar" placeholder="Pesquisar produtos...">
+        
+        <div class="products-grid" id="productsGrid">
+            <!-- Produtos serão carregados via JavaScript -->
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
